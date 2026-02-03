@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 For You</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Quicksand:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Subtle floating hearts -->
+    <div class="hearts-bg" id="heartsBg"></div>
+
+    <div class="container">
+        <!-- Screen 1: Entrance -->
+        <section class="screen active" id="entranceScreen">
+            <div class="entrance-content">
+                <p class="quote">"Hello! my favorite notification."</p>
+                <button class="btn-minimal" id="startBtn">Tap to continue 💕</button>
+            </div>
+        </section>
+
+        <!-- Screen 2: Memory Puzzle Game -->
+        <section class="screen" id="game1Screen">
+            <p class="game-title">Find all the pieces 💕</p>
+            <p class="game-subtitle">Tap to reveal each piece...</p>
+            <div class="puzzle-grid" id="puzzleGrid"></div>
+            <p class="puzzle-progress" id="puzzleProgress">0/9 pieces found</p>
+        </section>
+
+        <!-- Screen 2b: Picture Reveal -->
+        <section class="screen" id="pictureRevealScreen">
+            <p class="game-title">Look what you found! 💕</p>
+            <div class="picture-frame" id="pictureFrame">
+                <img id="couplePhoto" src="" alt="Us 💕">
+                <div class="picture-overlay" id="pictureOverlay"></div>
+            </div>
+            <p class="picture-caption">A cute moment of us 🥰</p>
+            <button class="btn-minimal" id="continueFromPicture">Continue 💕</button>
+        </section>
+
+        <!-- Screen 3: Love Quiz -->
+        <section class="screen" id="game2Screen">
+            <p class="game-title">Quick quiz! 💭</p>
+            <div class="quiz-container">
+                <p class="quiz-question" id="quizQuestion"></p>
+                <div class="quiz-options" id="quizOptions"></div>
+                <div id="storyBox" class="story-box"></div>
+            </div>
+        </section>
+
+        <!-- Screen 4: Catch Hearts Game -->
+        <section class="screen" id="game3Screen">
+            <p class="game-title">Catch hearts! 💖</p>
+            <p class="game-subtitle" id="game3Subtitle">Catch at least 5 hearts to start the timer!</p>
+            <div class="catch-area" id="catchArea">
+                <div class="catch-stats">
+                    <p class="catch-score">💖 <span id="heartCount">0</span></p>
+                    <p class="catch-timer" id="timerDisplay">⏱️ --</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 4b: Kisses Pending -->
+        <section class="screen" id="kissesScreen">
+            <div class="kisses-content">
+                <p class="kisses-emoji">😘</p>
+                <p class="kisses-count"><span id="kissesCount">0</span> kisses</p>
+                <p class="kisses-text">are pending for you!</p>
+                <p class="kisses-note">I'll collect them soon 💕</p>
+            </div>
+        </section>
+
+        <!-- Screen 5: The Question -->
+        <section class="screen" id="questionScreen">
+            <div class="question-content">
+                <p class="the-question">Will you be my Valentine?</p>
+                <div class="answer-btns">
+                    <button class="btn-yes" id="yesBtn">Yes 💕</button>
+                    <button class="btn-no" id="noBtn">No</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screen 6: Happy Ending -->
+        <section class="screen" id="yayScreen">
+            <div class="yay-content">
+                <p class="yay-emoji">🥰</p>
+                <p class="yay-text">I knew you'd say yes!</p>
+                <p class="yay-sub">Can't wait to spend Valentine's with you 💕</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
